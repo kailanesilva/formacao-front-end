@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+h4{
+    color: deeppink;
+    background-color: pink;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid purple;
+    width: 500px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
