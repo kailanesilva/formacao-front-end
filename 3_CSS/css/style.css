@@ -11,3 +11,91 @@ h3{
 p{
     color: blueviolet;
 }
+
+/*Algum comentário*/
+/*Mais um comentário*/
+/*Terceiro comentário*/
+
+/*classes*/
+.paragraph{
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+/*id*/
+#exclusive-title{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/*ordem das regras*/
+h2{
+    border-bottom: 2px solid red;
+}
+
+.titulo{
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 4px solid green;
+}
+
+/*Nome de Cor*/
+.color-name{
+    color: crimson;
+}
+
+/*Cores hexadecimais*/
+.hex{
+    color: #55a399;
+}
+
+.hex-2{
+    color: #0be6e6;
+}
+
+/*Aprofundando em Hex*/
+.simple-hex{
+    color: #333;
+}
+
+.simple-hex-2{
+    color: #a5F;
+}
+
+/*RGB*/
+.rgb{
+    color: rgb(255,0,0);
+}
+
+.mixed-rgb{
+    color: rgb(198,125,50);
+}
+
+/*RGBA*/
+.rgba{
+    color: rgba(199, 230, 30, 0.3);
+}
+
+/*HSL*/
+.hsl{
+    color: hsl(100,20%,50%);
+}
+
+.hsl-2{
+    color: hsl(60, 80%, 10%);
+}
+
+/*Background*/
+.bg{
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-2{
+    background-color: rgb(200,20,40);
+    color: #00eaff;
+}
