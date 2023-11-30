@@ -150,3 +150,100 @@ h2{
     height: 300px;
     background-color: #333;
 }
+
+/*Padding*/
+
+.without-padding{
+    background-color: #111;
+    color: #fff;
+}
+
+.padding{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/*Padding Individual*/
+
+.padding-individual{
+    background-color: #222;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+/*Shorthand Padding*/
+
+.shorthand-padding{
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2{
+    background-color: #555;
+    padding: 10px 20px;
+    /*padding: 10px 20px 10px 20px*/
+}
+
+/*Padding com Width*/
+
+.without-border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #666;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/*Border*/
+
+.border{
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2{
+    border: 2px dotted #931;
+    padding: 20px;
+}
+
+/*Borda individual*/
+
+.border-left{
+    border-left: 3px solid red;
+    background-color: #222;
+    padding: 25px;
+}
+
+.border-bottom{
+    border-bottom: 5px double #399;
+    background-color: #222;
+    padding: 20px;
+}
+
+/*Bordas Arredondadas*/
+
+.roudend-p{
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.roudend-p-2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
