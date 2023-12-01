@@ -247,3 +247,158 @@ h2{
     padding: 15px;
     border-radius: 25px;
 }
+
+/*Margem*/
+
+.margin{
+    background-color: #ff00ff;
+    margin: 15px;
+}
+
+.margin-top{
+    background-color: #20b2aa;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.margin-shorthand{
+    background-color: #32cd32;
+    margin: 5px 10px 15px 20px;
+}
+
+/*Box Model*/
+
+.box-model{
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+}
+
+/*Text Align*/
+
+.text-aligned{
+    text-align: right;
+}
+
+.conteiner-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/*Text Decoration*/
+
+.underline{
+    text-decoration: underline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: red;
+}
+
+/*Text Transform*/
+
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/*Letter Spacing*/
+
+.spacing{
+    letter-spacing: 15px;
+}
+
+/*Fontes*/
+
+.serif{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sans-serif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+/*Font Style*/
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+/*Font Weight*/
+
+.thin{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bolder{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Font Size*/
+
+.small{
+    font-size: 6px;
+}
+
+.big{
+    font-size: 78px;
+}
+
+/*Display*/
+
+.inline-box{
+    height: 50px;
+    width: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #444;
+    display: block;
+    margin: 10px;
+}
+
+.invisible{
+    display: none;
+}
+
+.bo{
+    background-color: red;
+}
