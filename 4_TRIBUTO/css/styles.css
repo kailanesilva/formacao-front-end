@@ -13,6 +13,10 @@ html{
     padding: 20px 50px;
 }
 
+p, li{
+    line-height: 28px;
+}
+
 .header{
     text-align: center;
 }
@@ -63,10 +67,6 @@ html{
     margin: 25px 0px;
     border-top: 1px dashed #808080;
     border-bottom: 1px dashed #808080;
-}
-
-.curiosities-container li{
-    height: 30px;
 }
 
 .img-bold{
