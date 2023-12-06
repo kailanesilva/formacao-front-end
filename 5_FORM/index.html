@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Formulários HTML</h1>
+    <!--1 - primeiro formulário-->
+    <!--2 - atributos do formulário-->
+    <form action="register.php" method="get">
+        <div>
+        <label>Nome:</label>
+        <input type="text">
+        </div>
+        <!--3 - atributo name-->
+        <!--4 - atributo for-->
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+        </div>
+        <!--6 - select-->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="medico">Médico</option>
+                <option value="dentista">Dentista</option>
+                <option value="professor">Professor</option>
+            </select>
+        </div>
+        <!--7 - atributo selected-->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+            <!--8 - múltiplas opções-->
+            <div>
+                <label for="items">Selecione os itens desejados:</label>
+                <select name="items" multiple>
+                    <option value="pera">Pêra</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="milho">Milho</option>
+                    <option value="acucar">Açúcar</option>
+                </select>
+            </div>
+        </div>
+        <!--5 - envio de form-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
