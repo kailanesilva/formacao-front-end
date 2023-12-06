@@ -38,13 +38,15 @@ html{
 .biography-container{
     padding: 20px 0px;
     margin: 25px 0px;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
+    border-top: 1px dashed #808080;
+    border-bottom: 1px dashed #808080;
 }
 
 .quotes-container{
     background-color: #ddd;
     padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #808080;
 }
 
 .quotes-container blockquote{
@@ -59,8 +61,8 @@ html{
 .curiosities-container{
     padding: 25px 0px;
     margin: 25px 0px;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
+    border-top: 1px dashed #808080;
+    border-bottom: 1px dashed #808080;
 }
 
 .curiosities-container li{
