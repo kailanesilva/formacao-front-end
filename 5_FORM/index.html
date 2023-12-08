@@ -21,6 +21,7 @@
             <label for="age">Idade:</label>
             <input type="text" name="age">
         </div>
+
         <!--6 - select-->
         <div>
             <label for="job">Selecione a sua profissão:</label>
@@ -31,6 +32,7 @@
                 <option value="professor">Professor</option>
             </select>
         </div>
+
         <!--7 - atributo selected-->
         <div>
             <label for="contract">Você leu os termos do contrato?</label>
@@ -38,6 +40,7 @@
                 <option value="sim">Sim</option>
                 <option value="nao" selected>Não</option>
             </select>
+
             <!--8 - múltiplas opções-->
             <div>
                 <label for="items">Selecione os itens desejados:</label>
@@ -50,6 +53,62 @@
                 </select>
             </div>
         </div>
+
+        <!--9 - textarea-->
+        <div>
+            <label for="comment">Comente abaixo o que você achou do post:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!--10 - fieldset e legend-->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <!--11 - datalist-->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" name="flavor" list="flavors">
+
+            <datalist id="flavors">
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+
+        <!--12 - senha-->
+        <div>
+            <label for="password">Digite sua senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <!--14 - radio button-->
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" name="car_model" value="bmw">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="ferrari">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="porsche">
+                <label for="porsche">Porsche</label>
+            </div>
+        </div>
+
+        <!--13 - input reset-->
+        <input type="reset" value="Limpar">
         <!--5 - envio de form-->
         <input type="submit" value="Enviar">
     </form>
