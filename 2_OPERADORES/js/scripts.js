@@ -27,3 +27,24 @@ console.log(typeof 'Outro texto');
 // 5 - Símbolos Especiais em String
 console.log("Testando a \n quebra de linha");
 console.log("Espaçamento \t de tab");
+
+// 6 - Concatenação
+console.log("Oi," + " tudo" + " bem?");
+console.log(`Testando` + ` com` + ` crase!`);
+
+// 7 - Template Strings - Interpolação
+console.log(`A soma de 2 + 2 são: ${2 + 2}`);
+
+
+// 8 - Boolean
+console.log(true);
+console.log(5 > 20);
+console.log(30 > 10);
+console.log(typeof false);
+
+// 9 - Comparações
+console.log(5 <= 5);
+console.log(5 < 5);
+console.log(10 == 10);
+console.log(10 == 9);
+console.log(10 != 9);
