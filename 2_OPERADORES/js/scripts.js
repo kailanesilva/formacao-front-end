@@ -35,7 +35,6 @@ console.log(`Testando` + ` com` + ` crase!`);
 // 7 - Template Strings - Interpolação
 console.log(`A soma de 2 + 2 são: ${2 + 2}`);
 
-
 // 8 - Boolean
 console.log(true);
 console.log(5 > 20);
