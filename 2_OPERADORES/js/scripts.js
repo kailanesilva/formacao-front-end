@@ -47,3 +47,30 @@ console.log(5 < 5);
 console.log(10 == 10);
 console.log(10 == 9);
 console.log(10 != 9);
+
+// 10 - Valores Idênticos
+console.log(9 == "9");
+console.log(9 === "9");
+console.log(9 != "9");
+console.log(9 !== "9");
+
+/* 11 - Operadores Lógicos - Unir duas ou mais comparações
+&& - AND - true apenas se os dois lados forem verdadeiros;
+|| - OR - para ser true, um lado como true é suficiente;
+! - NOT - este operador inverte a comparação;
+*/
+console.log(true && true);
+console.log(true && false);
+console.log(5 > 2 && 2 < 10);
+console.log(5 > 2 || "Kailane" === 1);
+console.log(5 > 2 && "Kailane" === 1);
+console.log(5 < 2 || 5 > 100);
+console.log(!true);
+console.log(!5 > 2);
+
+// 12 - Empty Values
+console.log(typeof undefined, typeof null);
+console.log(null == undefined);
+console.log(null === undefined);
+console.log(null == false);
+console.log(undefined == false);
