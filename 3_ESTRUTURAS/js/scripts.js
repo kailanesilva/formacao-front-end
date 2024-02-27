@@ -38,9 +38,21 @@ let $teste = "ok";
 
 console.log(_teste, $teste);
 
-// 3 - Nomes reservados - Jamais declarar variáveis com funcionalidades do JavaScript, como:
+// Nomes reservados - Jamais declarar variáveis com funcionalidades do JavaScript, como:
 /* break case catch class const continue debbuger default delete do else enum export extends
 false finally function if implements import interface in instanceof let new package
 private protected public return static super switch this throw true try typeof
 var void while with yield*
 É possível unir ela a outra palavra pra formar a variável. Ex: let breakTeste = 1;*/
+
+// 3 - Prompt
+const age = prompt("Digite a sua idade:");
+
+console.log(`Você tem ${age} anos.`);
+
+// 4 - Alert
+alert("Testando a função alert");
+
+const z = 10;
+
+alert(`O número é ${z}`);
