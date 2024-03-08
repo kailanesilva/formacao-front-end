@@ -129,3 +129,36 @@ if(userName === "José"){
 } else{
     console.log("Nenhuma das condições foram aceitas!")
 }
+
+// 10 - While
+let p = 0;
+
+while(p < 5){
+    console.log(`Repetindo: ${p}`)
+    p++
+}
+
+/*Loop infinito
+let x = 10;
+
+while(x > 5){
+    console.log(`Repetindo: ${x}`)
+}
+*/
+
+// 11 - Do While
+let o = 10;
+do{
+    console.log(`Valor de o: ${o}`)
+    o--
+} while(o > 1)
+
+// 12 - For
+for(let t = 0; t < 10; t++){
+    console.log(`Repetindo algo...`)
+}
+
+let r = 10;
+for(r; r > 0; r = r - 1){
+    console.log(`O r está diminuindo: ${r}`)
+}
