@@ -162,3 +162,25 @@ let r = 10;
 for(r; r > 0; r = r - 1){
     console.log(`O r está diminuindo: ${r}`)
 }
+
+// 13 - Identação (espaço para organizar o código. Veja no exemplo abaixo um código sem identação e observe como fica difícil de entender)
+
+for(let u = 0; u < 10; u++){
+if(u * 2 > 10){
+console.log(`Maior que 10! ${u}`)
+} else{
+if(u / 2 === 0){
+console.log(`Deu 0`)
+}
+}
+}
+
+// 14 - Break
+for(let g = 20; g > 10; g--){
+    console.log(`O valor de g é: ${g}`)
+
+    if(g === 15){
+        console.log(`g é 15!`)
+        break;
+    }
+}
