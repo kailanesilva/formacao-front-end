@@ -127,14 +127,14 @@ if(userName === "José"){
 } else if(userName === "Kailane" && userAge === 19){
     console.log("Olá Kailane, você tem 19 anos!");
 } else{
-    console.log("Nenhuma das condições foram aceitas!")
+    console.log("Nenhuma das condições foram aceitas!");
 }
 
 // 10 - While
 let p = 0;
 
 while(p < 5){
-    console.log(`Repetindo: ${p}`)
+    console.log(`Repetindo: ${p}`);
     p++
 }
 
@@ -142,32 +142,32 @@ while(p < 5){
 let x = 10;
 
 while(x > 5){
-    console.log(`Repetindo: ${x}`)
+    console.log(`Repetindo: ${x}`);
 }
 */
 
 // 11 - Do While
 let o = 10;
 do{
-    console.log(`Valor de o: ${o}`)
+    console.log(`Valor de o: ${o}`);
     o--
 } while(o > 1)
 
 // 12 - For
 for(let t = 0; t < 10; t++){
-    console.log(`Repetindo algo...`)
+    console.log(`Repetindo algo...`);
 }
 
 let r = 10;
 for(r; r > 0; r = r - 1){
-    console.log(`O r está diminuindo: ${r}`)
+    console.log(`O r está diminuindo: ${r}`);
 }
 
 // 13 - Identação (espaço para organizar o código. Veja no exemplo abaixo um código sem identação e observe como fica difícil de entender)
 
 for(let u = 0; u < 10; u++){
 if(u * 2 > 10){
-console.log(`Maior que 10! ${u}`)
+console.log(`Maior que 10! ${u}`);
 } else{
 if(u / 2 === 0){
 console.log(`Deu 0`)
@@ -177,10 +177,40 @@ console.log(`Deu 0`)
 
 // 14 - Break
 for(let g = 20; g > 10; g--){
-    console.log(`O valor de g é: ${g}`)
+    console.log(`O valor de g é: ${g}`);
 
     if(g === 15){
-        console.log(`g é 15!`)
+        console.log(`g é 15!`);
         break;
     }
 }
+
+// 15 - Continue
+for(let s = 1; s < 10; s++){
+
+    if(s % 2 === 0){
+        console.log("Número par!");
+        continue;
+    }
+
+    console.log(s);
+}
+
+// 16 - Switch
+const job = "asd";
+
+switch(job){
+    case "Programador":
+        console.log("Você é um programador!");
+        break
+    case "Advogado":
+        console.log("Você é um advogado!");
+        break
+    case "Engenheiro":
+        console.log("Você é um engenheiro!");
+        break
+    default:
+        console.log("Profissão não encontrada");
+}
+
+// Convenção de nome de variáveis mais utilizada é por exemplo: let programadorCadastrado; (primeira letra da primeira palavra minúscula e as demais palavras com a primeira letra maiúscula)
