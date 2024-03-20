@@ -42,5 +42,48 @@ function testandoEscopo(){
     let y = 20;
     console.log(`Y dentro da função é: ${y}`);
 }
+
 testandoEscopo();
+
 console.log(`Y fora da função é: ${y}`);
+
+// 4 - Escopo Aninhado
+let m = 10;
+
+function escopoAninhado(){
+    let m = 20;
+
+    if(true){
+        let m = 30;
+
+        if(true){
+            let m = 40;
+            
+            console.log(m);
+        }
+        console.log(m);
+    }
+    console.log(m);
+}
+escopoAninhado();
+console.log(m);
+
+// 5 - Arrow Function
+const testeArrow = () => {
+    console.log("Esta é uma arrow function");
+}
+
+testeArrow();
+
+const parOuImpar = (n) => {
+    if(n % 2 === 0){
+        console.log("Par");
+        return
+    }
+    
+    console.log("Ímpar");
+}
+
+parOuImpar(5);
+
+parOuImpar(10);
