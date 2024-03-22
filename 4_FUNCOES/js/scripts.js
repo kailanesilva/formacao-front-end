@@ -87,3 +87,41 @@ const parOuImpar = (n) => {
 parOuImpar(5);
 
 parOuImpar(10);
+
+// 6 - Mais Sobre Arrow Functions
+const raizQuadrada = (x) => {
+    return x * x ;
+}
+
+console.log(raizQuadrada(4));
+
+const raizQuadrada2 = (x) => x * x;
+
+console.log(raizQuadrada2(5));
+
+console.log(raizQuadrada2(12));
+
+const helloWorld = () => console.log("Hello World!");
+
+helloWorld();
+
+// 7 - Parâmetro Opcional
+const multiplication = function (m, n) {
+    if(n === undefined){
+        return m * 2;
+    } else{
+        return m * n;
+    }
+}
+console.log(multiplication(5));
+console.log(multiplication(2, 4));
+
+const greeting = (name) => {
+    if(!name){
+        console.log(`Olá!`);
+        return;
+    }
+    console.log(`Olá ${name}!`);
+}
+greeting();
+greeting("Kailane");
