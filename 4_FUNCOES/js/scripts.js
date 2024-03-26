@@ -125,3 +125,84 @@ const greeting = (name) => {
 }
 greeting();
 greeting("Kailane");
+
+// 8 - Valor Default
+const customGreeting = (name, greet = "Olá") => {
+    return `${greet}, ${name}!`;
+}
+console.log(customGreeting("Kailane"));
+console.log("João", "Bom dia");
+
+const repeatText = (text, repeat = 2) => {
+    for(let i = 0; i < repeat; i++) {
+        console.log(text)
+    }
+}
+repeatText("Testando");
+
+repeatText( "Agora repete 5 vezes", 5);
+
+// 9 - Closure - Conjunto de funções onde há um reaproveitamento do escopo interno de uma função
+function someFunction(){
+    let txt = "Alguma coisa";
+
+    function display(){
+        console.log(txt);
+    }
+    display();
+}
+someFunction();
+
+// 10 - Mais Sobre Closure - Também servem para salvar os resultados já executados
+const multiplicationClosure = (n) => {
+    return (m) => {
+        return m * n;
+    }
+}
+const c1 = multiplicationClosure(5);
+
+const c2 = multiplicationClosure(10);
+
+console.log(c1);
+
+console.log(c2);
+
+console.log(c1(5));
+
+console.log(c2(10));
+
+// 11 - Recursion
+const untilTen = (n, m) => {
+    if(n < 10){
+        console.log("A função parou de executar!");
+    } else {
+        const x = n - m;
+
+        console.log(x);
+
+        untilTen(x, m);
+    }
+}
+untilTen( 100, 7);
+
+/* Infinite Recursion 
+function run() {
+    console.log("Executando...")
+    run();
+}
+run();
+*/
+
+function factorial(x) {
+    if(x === 0){
+        return 1;
+    } else {
+        return x * factorial(x - 1);
+    }
+}
+
+const num = 6;
+
+const result = factorial(num);
+
+console.log(`O fatorial do número ${num} é ${result}`);
