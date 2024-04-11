@@ -43,3 +43,40 @@ console.log(text.toUpperCase());
 console.log(typeof text.toUpperCase);
 
 console.log(text.indexOf("g"));
+
+// 5 - Objetos
+const person = {
+    name: "Kailane",
+    age: 19,
+    job: "Programadora"
+};
+
+console.log(person);
+
+console.log(person.name);
+
+console.log(person.name.length);
+
+console.log(person.age);
+
+console.log(person.job);
+
+console.log(typeof person);
+
+// 6 - Criando e Deletando Propriedades
+const car = {
+    engine: 2.0,
+    brand: "VW",
+    model: "Tiguan",
+    km: 20000,
+};
+
+console.log(car);
+
+car.doors = 4;
+
+console.log(car);
+
+delete car.km;
+
+console.log(car);
