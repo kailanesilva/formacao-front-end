@@ -80,3 +80,54 @@ console.log(car);
 delete car.km;
 
 console.log(car);
+
+// 7 - Mais Sobre Objetos
+const obj = {
+    a: "teste",
+    b: true
+};
+
+console.log(obj instanceof Object);
+
+const obj2 = {
+    c: []
+};
+
+Object.assign(obj2, obj);
+
+console.log(obj2);
+
+console.log(obj);
+
+// 8 - Conhecendo Melhor os Objetos
+console.log(Object.keys(obj));
+
+console.log(Object.keys(obj2));
+
+console.log(Object.keys(car));
+
+console.log(Object.entries(car));
+
+// 9 - Mutação
+const a = {
+    name: "Kailane"
+};
+
+const b = a;
+
+console.log(a);
+console.log(b);
+
+console.log(a === b);
+
+a.age = 19;
+
+console.log(a);
+console.log(b);
+
+delete b.age;
+
+console.log(a);
+console.log(b);
+
+
