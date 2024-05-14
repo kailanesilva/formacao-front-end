@@ -212,3 +212,31 @@ console.log(subArray3);
 const subArray4 = testeSlice.slice(2);
 
 console.log(subArray4);
+
+// 15 - Foreach
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) => {
+    console.log(`O número é ${numero}`);
+})
+
+const posts = [
+    {title: "Primeiro post", category: "PHP"},
+    {title: "Segundo post", category: "JavaScript"},
+    {title: "Terceiro post", category: "Python"},
+];
+
+posts.forEach((post) => {
+    console.log(`Exibindo post: ${post.title}, da categoria: ${post.category}`);
+})
+
+// 16 - Includes
+const brands = ["BMW","VW", "Fiat"];
+
+console.log(brands.includes("Fiat"));
+
+console.log(brands.includes("KIA"));
+
+if(brands.includes("BMW")){
+    console.log("Há carros da BMW!");
+}
