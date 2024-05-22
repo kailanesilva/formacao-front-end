@@ -247,3 +247,27 @@ const reverseTest = [1, 2, 3, 4, 5];
 reverseTest.reverse();
 
 console.log(reverseTest);
+
+// 18 - Trim
+const trimTeste = " Testando \n  "
+
+console.log(trimTeste);
+
+console.log(trimTeste.trim());
+
+console.log(trimTeste.length);
+
+console.log(trimTeste.trim().length);
+
+// 19 - PadStart
+const testePadstart = "1";
+
+const newNumber = testePadstart.padStart(4, "0");
+
+console.log(testePadstart);
+
+console.log(newNumber);
+
+const testePadEnd = newNumber.padEnd(10, "0");
+
+console.log(testePadEnd);
