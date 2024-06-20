@@ -105,3 +105,54 @@ const jack = criarCachorro("Jack", "Poodle");
 console.log(jack);
 
 console.log(Object.getPrototypeOf(jack));
+
+// 7 - Funções Como Classe
+function Cachorro(nome, raca){
+    this.nome = nome
+    this.raca = raca
+}
+
+const husky = new Cachorro("Ozzy", "Husky Siberiano");
+
+// 8 - Métodos na Função Construtora
+Cachorro.prototype.uivar = function(){
+    console.log("Auuuuu!")
+}
+
+husky.uivar();
+
+// 9 - Classes ES6
+class CachorroClasse{
+    constructor(nome, raca){
+        this.nome = nome
+        this.raca = raca
+    }
+}
+
+const jeff = new CachorroClasse("Jeff","Labrador");
+
+console.log(jeff);
+
+console.log(Object.getPrototypeOf(jeff));
+
+// 10 - Mais Sobre Classes
+class Caminhao {
+    constructor(eixos, cor){
+        this.eixos = eixos
+        this.cor = cor
+    }
+
+    descreverCaminhao() {
+        console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`);
+    }
+}
+
+const scania = new Caminhao(6, "Vermelha");
+
+console.log(scania);
+
+scania.descreverCaminhao();
+
+Caminhao.prototype.motor = 4.0;  //não tão usual mais é assim que adiciona uma nova propriedade a uma classe
+
+console.log(scania.motor);
