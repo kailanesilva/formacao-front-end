@@ -156,3 +156,45 @@ scania.descreverCaminhao();
 Caminhao.prototype.motor = 4.0;  //não tão usual mais é assim que adiciona uma nova propriedade a uma classe
 
 console.log(scania.motor);
+
+// 11 = Override
+class Humano {
+    constructor(nome, idade){
+        this.nome = nome
+        this.idade = idade
+    }
+}
+
+const kailane = new Humano("Kailane", 19);
+
+console.log(kailane);
+
+Humano.prototype.idade = "Não definida";
+
+console.log(kailane.idade);
+
+console.log(Humano.prototype.idade);
+
+// 12 - Symbol
+class Aviao {
+    constructor(marca, turbinas){
+        this.marca = marca
+        this.turbinas = turbinas
+    }
+}
+
+const asas = Symbol();
+
+const pilotos = Symbol()
+
+Aviao.prototype[asas] = 2;
+
+Aviao.prototype[pilotos] = 3
+
+const boieng = new Aviao("Boeing",10);
+
+console.log(boieng);
+
+console.log(boieng[asas]);
+
+console.log(boieng[pilotos]);
