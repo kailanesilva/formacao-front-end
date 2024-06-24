@@ -185,11 +185,11 @@ class Aviao {
 
 const asas = Symbol();
 
-const pilotos = Symbol()
+const pilotos = Symbol();
 
 Aviao.prototype[asas] = 2;
 
-Aviao.prototype[pilotos] = 3
+Aviao.prototype[pilotos] = 3;
 
 const boieng = new Aviao("Boeing",10);
 
@@ -198,3 +198,60 @@ console.log(boieng);
 console.log(boieng[asas]);
 
 console.log(boieng[pilotos]);
+
+// 13 - Getter e Setter
+class Post {
+    constructor(titulo, descricao, tags){
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
+    }
+
+    get exibirTitulo() {
+        return `Você está lendo: ${this.titulo}`;
+    }
+
+    set adicionarTags(tags) {
+        const tagsArray = tags.split(", ");
+        this.tags = tagsArray;
+    }
+}
+
+const myPost = new Post("Algum Post","É um post sobre programação");
+
+console.log(myPost);
+
+console.log(myPost.exibirTitulo);
+
+myPost.adicionarTags = "programação, javascript, js";
+
+console.log(myPost);
+
+// 14 - Herança
+class Mamifero {
+    constructor(patas){
+        this.patas = patas
+    }
+}
+
+class Lobo extends Mamifero{
+     constructor(patas, nome){
+       super(patas, patas)
+       this.nome = nome
+     }
+}
+
+const shark = new Lobo(4, "Shark");
+
+console.log(shark);
+
+console.log(shark.patas);
+
+// 15 - InstanceOf
+console.log(shark instanceof Lobo);
+
+console.log(Lobo instanceof Mamifero);
+
+console.log(new Lobo(4, "teste") instanceof Mamifero);
+
+console.log(new Post("a","b") instanceof Lobo);
