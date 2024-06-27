@@ -17,3 +17,4 @@ console.log("Ainda não começou");
 //}, 2000);
 
 console.log("Ainda não começou 2");
+
