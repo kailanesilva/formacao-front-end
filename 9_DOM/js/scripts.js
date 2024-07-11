@@ -78,3 +78,31 @@ firstLink.setAttribute("href", "https://google.com");
 console.log(firstLink.getAttribute("href"));
 
 firstLink.setAttribute("target", "_blank");
+
+// 11 - Altura e Largura
+const footer = document.querySelector("footer");
+
+console.log(footer.offsetWidth); //offsetWidth e offsetHeigth consideram borda
+
+console.log(footer.offsetHeight);
+
+console.log(footer.clientWidth); //clientWidth e clientHeigth não consideram borda
+
+console.log(footer.clientHeight);
+
+// 12 - Posição do Elemento - Mostra todas as propriedades do elemento: heigth, width, bottom, top, x, y left, rigth... 
+const product1 = products[0];
+
+console.log(product1.getBoundingClientRect());
+
+// 13 - CSS com JS
+mainContainer.style.color = "blue";
+
+mainContainer.style.backgroundColor = "pink";
+
+mainContainer.style.paddingBottom = "15px";
+
+// 14 - Alterando Estilos de Vários Elementos
+for(const li of listItens){
+    li.style.backgroundColor = "orange";
+}
