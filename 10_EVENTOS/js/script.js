@@ -45,3 +45,36 @@ btnInsideContainer.addEventListener("click", (e) => {
     e.stopPropagation();
     console.log("Evento 2");
 })
+
+// 5 - Removendo Evento Padrão
+const a = document.querySelector("a");
+
+a.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    console.log("Não alterou a página");
+})
+
+// 6 - Eventos de Tecla
+document.addEventListener("keyup", (e) => {
+    console.log(`Soltou a tecla ${e.key}`);
+})
+
+document.addEventListener("keydown", (e) => {
+    console.log(`Pressionou a tecla ${e.key}`);
+})
+
+// 7 - Eventos de Mouse
+const mouseEvents = document.querySelector("#mouse");
+
+mouseEvents.addEventListener("mousedown", () => {
+    console.log("Pressionou o botão");
+})
+
+mouseEvents.addEventListener("mouseup", () => {
+    console.log("Soltou o botão");
+})
+
+mouseEvents.addEventListener("dblclick", () => {
+    console.log("Clique duplo");
+})
