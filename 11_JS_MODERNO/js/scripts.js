@@ -81,7 +81,7 @@ const highNumbers = arr.filter((n) => {
     if(n >= 3){
         return n;
     }
-})
+});
 
 console.log(highNumbers);
 
@@ -91,8 +91,48 @@ const users = [
     {name: "Maria", available: true},
     {name: "Josias", available: false},
     {name: "Kleber", available: true}
-]
+];
 
 const availableUsers = users.filter((user) => user.available);
 
 console.log(availableUsers);
+
+// 4 - Map
+const products = [
+    {name: "Camisa", price: 10.99, category: "Roupas"},
+    {name: "Chaleira Elétrica", price: 150, category: "Eletro"},
+    {name: "Fogão", price: 499, category: "Eletro"},
+    {name: "Calça Jeans", price: 87.99, category: "Roupas"},
+];
+
+products.map((product) => {
+    if(product.category === "Roupas"){
+        product.onSale = true
+    }
+})
+
+console.log(products);
+
+// 5 - Template Literals
+const userName = "Kailane";
+const age = 20;
+
+console.log(`O nome da usuária é ${userName} e ela tem ${age} anos.`);
+
+// 6 - Destructuring
+const fruits = ["Maçã", "Mamão", "Laranja"];
+
+const [f1, f2, f3] = fruits;
+
+console.log(f1, f2, f3);
+
+const productDetails = {
+    name: "Mouse",
+    price: 39.99,
+    category: "Periférico",
+    color: "Cinza"
+}
+
+const {name: productName, price, category, color} = productDetails;
+
+console.log(`O nome do produto é ${productName}, ele custa R$${price} e é da cor ${color}`);
